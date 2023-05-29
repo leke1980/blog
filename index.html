@@ -131,7 +131,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p></p>
+    <p>新建仓库 blog hugo new site blog cd blog echo “# blog” » README.md git init git add . git commit -m “更新” git branch -M main git remote add origin git@github.com:leke1980/blog.git git push -u origin main 创建分支 gh-pages 开通权限 Workflow permissions 创建文件夹 mkdir -p .github/workflows 创建deploy.yml touch .github/workflows/deploy.yml 粘贴代码到deploy.yml name: Publish to GH Pages on: push: branches: - main pull_request: jobs: deploy: runs-on: ubuntu-latest steps: - name: Checkout source uses: actions/checkout@v3 with: submodules: true - name: Checkout destination uses: actions/checkout@v3 if: github....</p>
   </div>
   <footer class="entry-footer"><span title='2023-05-29 19:53:56 +0800 +0800'>May 29, 2023</span></footer>
   <a class="entry-link" aria-label="post link to 第一篇文章" href="http://leke1980.github.io/blog/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"></a>

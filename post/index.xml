@@ -13,7 +13,7 @@
       <pubDate>Mon, 29 May 2023 19:53:56 +0800</pubDate>
       
       <guid>http://leke1980.github.io/blog/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      <description></description>
+      <description>新建仓库 blog hugo new site blog cd blog echo &amp;ldquo;# blog&amp;rdquo; &amp;raquo; README.md git init git add . git commit -m &amp;ldquo;更新&amp;rdquo; git branch -M main git remote add origin git@github.com:leke1980/blog.git git push -u origin main 创建分支 gh-pages 开通权限 Workflow permissions 创建文件夹 mkdir -p .github/workflows 创建deploy.yml touch .github/workflows/deploy.yml 粘贴代码到deploy.yml name: Publish to GH Pages on: push: branches: - main pull_request: jobs: deploy: runs-on: ubuntu-latest steps: - name: Checkout source uses: actions/checkout@v3 with: submodules: true - name: Checkout destination uses: actions/checkout@v3 if: github.</description>
     </item>
     
   </channel>
